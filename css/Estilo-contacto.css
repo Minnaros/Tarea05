@@ -1,0 +1,120 @@
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+    background-image: url(../IMG-FONDO/pexels-pavel-danilyuk-7191162.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+}
+form{
+    background-color: rgb(233, 233, 233);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgb(134, 134, 134);
+}
+h2{
+    color: rgb(54, 169, 204);
+    font-size: 1,8rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 i{
+    margin-right: 10px;
+}
+.subtitle{
+    color: gray;
+    font-size: 0,9rem;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1,4;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: rgb(54, 169, 204);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+label i{
+    margin-right: 8px;
+    width: 15px;
+}
+input, textarea{
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    border: 2px;
+    transition: all 0.3s;
+}
+input:focus, textarea:focus{
+    border-color: bisque;
+    box-shadow: 0 10px 25px rgb(134, 134, 134);
+}
+input::placeholder, textarea::placeholder{
+    color: rgb(109, 145, 179);
+}
+.fron-links{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+.form-links a{
+    color: rgb(9, 128, 175);
+    font-size: 0,9;
+    font-family: sans-serif;
+}
+.form-links a:hover{
+    color: rgb(50, 74, 153);
+}
+.btn{
+    padding: 14px;
+    font-size: 1rem;
+    color: rgb(54, 169, 204);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: rgb(37, 35, 35);
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+/*RESPONSIVE MÓVIL*/
+
+@media (max-width:450px){
+    form{
+        padding: 25px;
+    }
+    h2{
+        font-size: 1,5rem;
+    }
+    .form-links{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    }
+}
